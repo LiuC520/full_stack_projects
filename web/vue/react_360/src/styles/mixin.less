@@ -1,0 +1,181 @@
+@blue: #3190e8;
+@bc: #e4e4e4;
+@fc: #fff;
+
+// 背景图片地址和大小
+.bis(@url) {
+  background-image: url(@url);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+//定位全屏
+.allcover {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+//transform上下左右居中
+.ctt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+//定位上下左右居中
+.ctp(@width, @height) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -@height / 2;
+  margin-left: -@width / 2;
+}
+
+//定位上下居中
+.tb {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+//定位左右居中
+.lr {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+//宽高
+.wh(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+//字体大小、行高、字体
+.ft(@size, @line-height) {
+  font-size: @size;
+  line-height: @line-height;
+}
+
+//字体大小，颜色
+.sc(@size, @color) {
+  font-size: @size;
+  color: @color;
+}
+
+//flex 布局和 子元素 对其方式
+.fj(@type: space-between) {
+  display: flex;
+  justify-content: @type;
+}
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+  text-decoration: none;
+}
+a:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.h2 {
+  font-size: 2rem;
+}
+
+.containerFloatLeft {
+  max-width: 920px;
+  clear: both;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.containerFloatLeft a:link {
+  color: blue;
+  text-decoration: none;
+}
+.containerFloatLeft a:visited {
+  color: blue;
+  text-decoration: none;
+}
+.containerFloatLeft a:hover {
+  color: blue;
+  text-decoration: none;
+}
+.containerFloatLeft a:active {
+  color: blue;
+  text-decoration: none;
+}
+.code {
+  background: rgb(11, 26, 67);
+  color: white;
+  line-height: 3rem;
+  padding-left: 1rem;
+  border-radius: 5px;
+  border-left: 5px solid rgb(15, 103, 248);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.code1 {
+  background: rgb(240, 240, 240);
+  line-height: 2.3rem;
+  padding-left: 1rem;
+  border-radius: 5px;
+  border-left: 5px solid rgb(15, 103, 248);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mt20 {
+  margin-top: 2rem;
+}
+.firstimg {
+  max-width: 400px;
+  min-width: 100px;
+  margin-top: 20px;
+  height: auto;
+}
+
+.graybg {
+  line-height: 3rem;
+  background: rgb(240, 240, 240);
+  font-weight: bold;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+.gray {
+  color: rgb(117, 117, 117);
+}
+
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+
+p {
+  line-height: 2rem;
+}
+li {
+  list-style: disc;
+}
+.goto {
+  color: blue;
+  cursor: pointer;
+}
+/**
+* 代码里面不让显示{{
+**/
+[v-cloak] {
+  display: none;
+}
